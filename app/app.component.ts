@@ -7,5 +7,5 @@ import { FilterService } from './filter-service/filter.service';
     providers: [FilterService]
 })
 export class AppComponent { 
-    public filter: string = '';    
+    public filter: string = '';  
 }
