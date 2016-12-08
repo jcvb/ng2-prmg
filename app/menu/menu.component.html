@@ -12,7 +12,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
             <div class="navbar-form navbar-right">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Filtrar productos">
+                    <input [(ngModel)]="filter" (ngModelChange)="filterChange($event)" type="text" class="form-control" placeholder="Filtrar productos">
                 </div>
             </div>
         </div>
