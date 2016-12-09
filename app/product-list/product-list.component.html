@@ -1,6 +1,6 @@
 <div class="container">
     <div class="panel panel-default">
-        <div class="panel-heading">Lista de Productos</div>
+        <div class="panel-heading">{{pageTitle}}</div>
         <div class="panel-body">
             <h5>Filtrar por : {{filter}}
             </h5>
@@ -28,7 +28,9 @@
                             <td>{{product.codeProduct | uppercase }}</td>
                             <td>{{product.available | date:shortDate }}</td>
                             <td>{{product.costProduct | currency:'USD':true:'2.2-2' }}</td>
-                            <td>{{product.ratingProduct}}</td>
+                            <td>
+                                <ai-star [rating]="product.ratingProduct" (ratingClicked)="onRatingClicked($event)"></ai-star>
+                            </td>
                         </tr>
                     </tbody>
                 </table>

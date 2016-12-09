@@ -18,9 +18,14 @@ export class ProductListComponent implements OnDestroy{
     imageWidth: number = 70;
     imageMargin: number = 5;
     showImage: boolean = false;
+    pageTitle: string = 'Lista de Productos';
 
-    toggleImage(): void{
+    toggleImage(): void {
         this.showImage = !this.showImage;
+    }
+
+    onRatingClicked(message: string): void {
+        this.pageTitle = 'Lista de Productos: ' + message;
     }
 
     constructor(private filterService: FilterService) {

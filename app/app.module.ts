@@ -1,3 +1,4 @@
+import { StarComponent } from './shared/star.component';
 import { ProductFilterPipe } from './product-filter.pipe';
 import { ProductListComponent } from './product-list/product-list.component';
 import { MenuComponent } from './menu/menu.component';
@@ -17,7 +18,8 @@ import { AppComponent }  from './app.component';
     AppComponent,
     MenuComponent,
     ProductListComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    StarComponent
    ],
   bootstrap: [ AppComponent ]
 })
