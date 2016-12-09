@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
 import { FilterService } from './filter-service/filter.service';
+import { Component } from '@angular/core';
+
 @Component({
     moduleId: module.id,
     selector: 'pm-app',

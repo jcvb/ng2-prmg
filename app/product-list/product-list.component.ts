@@ -3,7 +3,7 @@ import { FilterService } from '../filter-service/filter.service';
 import { Subscription } from 'rxjs/Subscription';
 
 import { PRODUCTS } from './../product-service/product.service';
-import { Product } from './../product';
+import { IProduct } from './../product';
 
 @Component({
     moduleId: module.id,
@@ -14,7 +14,7 @@ export class ProductListComponent implements OnDestroy{
     
     @Input() filter: string; 
     subscription: Subscription;
-    products: Product[] = PRODUCTS;
+    products: IProduct[] = PRODUCTS;
     imageWidth: number = 70;
     imageMargin: number = 5;
     showImage: boolean = false;

@@ -1,6 +1,6 @@
-import { Product } from './../product';
+import { IProduct } from './../product';
 
-export const PRODUCTS: Product[] = [
+export const PRODUCTS: IProduct[] = [
     {
         nameProduct: 'potatoes',
         codeProduct: '7501011119734',

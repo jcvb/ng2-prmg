@@ -1,3 +1,4 @@
+import { ProductFilterPipe } from './product-filter.pipe';
 import { ProductListComponent } from './product-list/product-list.component';
 import { MenuComponent } from './menu/menu.component';
 
@@ -15,7 +16,8 @@ import { AppComponent }  from './app.component';
   declarations: [ 
     AppComponent,
     MenuComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductFilterPipe
    ],
   bootstrap: [ AppComponent ]
 })
